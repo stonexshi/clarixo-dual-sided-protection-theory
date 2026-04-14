@@ -1,8 +1,18 @@
 # CLARIXO Dual-Sided Protection Theory
 
-**A dual-sided governance model for AI producers:**
-- **LLM-side protection before execution**
-- **User-side protection after behavior enters the real world**
+**A dual-sided protection model for AI producers:**
+- **LLM-side protection before consequential execution**
+- **User-side protection after AI behavior enters the real world**
+
+---
+
+## What this repository is
+
+This repository documents the structural idea behind CLARIXO’s dual-sided protection model.
+
+It is not only a product note.
+
+It is an attempt to define a clearer governance structure for AI producers: one that distinguishes between the protection needed **before consequential execution** and the protection needed **after AI behavior has already entered real users, real workflows, and real-world consequence**.
 
 ---
 
@@ -17,14 +27,49 @@ Some focus on accountability, human oversight, or compliance.
 
 All of these matter.
 
-But in practice, organizations are often mixing together two very different infrastructure problems:
+But the practical trigger for this model did not come from theory alone.
+
+It came from integration reality.
+
+During a real integration experiment with TGTRACING, we found that **runtime integration** and **evidence integration** did not enter the system through the same point.
+
+That separation revealed a deeper structural fact:
+
+AI protection is not one flat infrastructure problem.
+
+It contains at least two different protection sides:
 
 1. **How to keep AI behavior governable before it becomes a real-world consequence**
 2. **How to preserve evidence, reviewability, and responsibility after that behavior enters the real world**
 
-CLARIXO proposes that these are not one flat problem.
+CLARIXO proposes that these are not the same problem, and should not be collapsed into one undifferentiated governance layer.
 
 They are **two different protection sides**.
+
+---
+
+## How the idea emerged
+
+This model did not begin as an abstract governance slogan.
+
+It emerged during a real integration experiment with TGTRACING.
+
+While testing integration paths, we found that **runtime integration** and **evidence integration** did not enter the system through the same point.
+
+That difference mattered.
+
+It revealed that these were not merely two features inside one flat control system.
+
+They were two structurally different protection directions:
+
+- one operating around runtime behavior before consequential execution
+- one operating around evidence, review, and responsibility after behavior enters the real world
+
+That moment became the true spark of the dual-sided protection model.
+
+The theory was not first invented in abstraction and then applied to a product.
+
+It was first seen as a structural fact during integration, and only later named as a theory.
 
 ---
 
@@ -158,21 +203,60 @@ This repository defines the methodology behind that structure.
 ## Core definition
 
 **CLARIXO is dual-sided infrastructure for AI producers:**
-- **LLM-side protection before execution**
-- **User-side protection after behavior enters the real world**
+- **LLM-side protection before consequential execution**
+- **User-side protection after AI behavior enters the real world**
 
 ---
 
 ## Notes on novelty
 
-To our knowledge, current AI governance discussions remain fragmented across runtime control, auditability, accountability, observability, and compliance.
+Many current AI governance discussions remain fragmented across runtime control, auditability, accountability, observability, and compliance.
 
-CLARIXO proposes a **dual-sided protection model** that organizes these concerns into:
+CLARIXO does not claim that each individual concern is entirely new.
+
+The novelty of this framework is the structural reorganization.
+
+It proposes that these concerns should be understood through **two different protection sides**:
 
 - an **LLM-side protection problem before execution**
 - a **user-side protection problem after behavior enters the real world**
 
-The novelty of this framework is not that each individual concern is entirely new, but that they are restructured into a unified two-sided infrastructure model centered on the AI producer.
+This model was not derived only from abstract categorization.
+
+It was sparked by a real integration observation: **runtime integration** and **evidence integration** did not enter the system through the same point.
+
+That separation revealed that AI protection itself was not single-sided.
+
+The dual-sided model is an attempt to turn that structural insight into a usable governance framework centered on the AI producer.
+
+---
+
+## What this model is not
+
+This theory does **not** claim that all AI governance questions can be reduced to two boxes.
+
+It does **not** deny the importance of safety research, alignment work, compliance, legal accountability, human oversight, or operational monitoring.
+
+It does **not** claim that one vendor or one product can solve the full governance problem.
+
+Instead, it argues that one major source of confusion comes from collapsing **pre-execution governance** and **post-behavior responsibility infrastructure** into the same conceptual layer.
+
+The dual-sided model is an attempt to make that split explicit.
+
+---
+
+## Why this matters
+
+If AI producers treat governance as only a model-side or runtime-side problem, they risk losing responsibility visibility after behavior reaches the real world.
+
+If they treat governance as only an after-the-fact audit problem, they risk losing the ability to intervene before costly or irreversible execution.
+
+A more serious AI infrastructure future likely requires both:
+
+- stronger control before consequential execution
+- stronger evidence and reviewability after real-world behavior
+
+That is the reason this model exists.
 
 ---
 
@@ -181,6 +265,7 @@ The novelty of this framework is not that each individual concern is entirely ne
 Planned extensions for this repository:
 
 - `docs/foundation.md` — deeper methodological foundation
+- `docs/origin.md` — how the theory emerged from integration reality
 - `docs/current-state.md` — current CLARIXO product mapping and capability status
 - `docs/anti-patterns.md` — common governance mistakes caused by one-sided thinking
 - diagrams for LLM-side / user-side structure
