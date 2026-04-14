@@ -2,6 +2,12 @@
 
 This document describes the current product mapping and capability status of CLARIXO under the Dual-Sided Protection Theory.
 
+That theory is not being used here as an abstract slogan alone.
+
+It emerged from integration reality, when **runtime integration** and **evidence integration** were found to enter the system through different structural points.
+
+This document focuses on the current product mapping that now follows from that split.
+
 It separates:
 
 - what is already live and usable,
@@ -17,9 +23,11 @@ CLARIXO is being developed as **dual-sided infrastructure for AI producers**:
 - **LLM-side protection before execution**
 - **User-side protection after behavior enters the real world**
 
-This means CLARIXO is not being defined as a single-point tool.
+This means CLARIXO is not being defined as a single-point tool or a single-path integration model.
 
 It is being developed as a structured layer between AI runtime behavior and real-world organizational consequence.
+
+The dual-sided framing matters because runtime-side integration and evidence-side integration do not enter the system through the same structural point.
 
 ---
 
@@ -186,6 +194,9 @@ The purpose of this current-state document is to prevent confusion between:
 
 CLARIXO is not only a concept.  
 It already has real product surfaces.
+
+The dual-sided model is also not being presented as an abstract classification detached from implementation.  
+It is grounded in a real structural distinction that has already appeared in integration and product mapping.
 
 At the same time, CLARIXO is still an advancing infrastructure layer rather than a fully finished endpoint in every direction.
 
